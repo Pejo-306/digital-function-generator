@@ -496,21 +496,109 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5C0DCDCB
-P 4000 950
-F 0 "#PWR?" H 4000 800 50  0001 C CNN
-F 1 "+5V" H 4015 1123 50  0000 C CNN
-F 2 "" H 4000 950 50  0001 C CNN
-F 3 "" H 4000 950 50  0001 C CNN
-	1    4000 950 
+P 4000 900
+F 0 "#PWR?" H 4000 750 50  0001 C CNN
+F 1 "+5V" H 4015 1073 50  0000 C CNN
+F 2 "" H 4000 900 50  0001 C CNN
+F 3 "" H 4000 900 50  0001 C CNN
+	1    4000 900 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 950  4000 1000
-Wire Wire Line
-	4000 1350 3900 1350
 Connection ~ 4000 1350
 Wire Wire Line
 	4000 1350 4000 1300
-Text Label 3900 1350 2    50   ~ 0
+Text Label 3600 1350 2    50   ~ 0
 ~RESET
+$Comp
+L Connector:AVR-ISP-6 J?
+U 1 1 5C0E1327
+P 4550 6200
+F 0 "J?" H 4270 6296 50  0000 R CNN
+F 1 "AVR-ISP-6" H 4270 6205 50  0000 R CNN
+F 2 "" V 4300 6250 50  0001 C CNN
+F 3 " ~" H 3275 5650 50  0001 C CNN
+	1    4550 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5700 4450 5650
+$Comp
+L power:+5V #PWR?
+U 1 1 5C0E20E7
+P 4450 5650
+F 0 "#PWR?" H 4450 5500 50  0001 C CNN
+F 1 "+5V" H 4465 5823 50  0000 C CNN
+F 2 "" H 4450 5650 50  0001 C CNN
+F 3 "" H 4450 5650 50  0001 C CNN
+	1    4450 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6600 4450 6650
+$Comp
+L power:GND #PWR?
+U 1 1 5C0E2C5E
+P 4450 6650
+F 0 "#PWR?" H 4450 6400 50  0001 C CNN
+F 1 "GND" H 4455 6477 50  0000 C CNN
+F 2 "" H 4450 6650 50  0001 C CNN
+F 3 "" H 4450 6650 50  0001 C CNN
+	1    4450 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2700 3500 2700
+Text Label 3500 2700 0    50   ~ 0
+SCLK
+Wire Wire Line
+	3400 2600 3500 2600
+Text Label 3500 2600 0    50   ~ 0
+MISO
+Wire Wire Line
+	3400 2500 3500 2500
+Text Label 3500 2500 0    50   ~ 0
+MOSI
+Wire Wire Line
+	4950 6000 5050 6000
+Text Label 5050 6000 0    50   ~ 0
+MISO
+Wire Wire Line
+	4950 6100 5050 6100
+Text Label 5050 6100 0    50   ~ 0
+MOSI
+Wire Wire Line
+	4950 6200 5050 6200
+Text Label 5050 6200 0    50   ~ 0
+SCLK
+Wire Wire Line
+	4950 6300 5050 6300
+Text Label 5050 6300 0    50   ~ 0
+~RESET
+$Comp
+L Device:LED D?
+U 1 1 5C0E8B9A
+P 3700 1150
+F 0 "D?" V 3645 1228 50  0000 L CNN
+F 1 "LED" V 3736 1228 50  0000 L CNN
+F 2 "" H 3700 1150 50  0001 C CNN
+F 3 "~" H 3700 1150 50  0001 C CNN
+	1    3700 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 1300 3700 1350
+Wire Wire Line
+	3700 1350 4000 1350
+Wire Wire Line
+	3700 1000 3700 950 
+Wire Wire Line
+	4000 900  4000 950 
+Wire Wire Line
+	3700 950  4000 950 
+Connection ~ 4000 950 
+Wire Wire Line
+	4000 950  4000 1000
+Wire Wire Line
+	3600 1350 3700 1350
+Connection ~ 3700 1350
 $EndSCHEMATC
