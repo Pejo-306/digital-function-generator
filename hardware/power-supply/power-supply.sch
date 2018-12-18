@@ -799,33 +799,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1150 4950 1350
 $Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5BFBD7EC
-P 9850 2800
-F 0 "J1" H 9930 2792 50  0000 L CNN
-F 1 "Conn_01x04" H 9930 2701 50  0000 L CNN
-F 2 "" H 9850 2800 50  0001 C CNN
-F 3 "~" H 9850 2800 50  0001 C CNN
-	1    9850 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 2700 9550 2700
-Text GLabel 9550 2700 0    50   Input ~ 0
-+12V
-Wire Wire Line
-	9650 2800 9550 2800
-Text GLabel 9550 2800 0    50   Input ~ 0
-+5V
-Wire Wire Line
-	9650 2900 9550 2900
-Text GLabel 9550 2900 0    50   Input ~ 0
--12V
-Wire Wire Line
-	9650 3000 9550 3000
-Text GLabel 9550 3000 0    50   Input ~ 0
-0V
-$Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5BF1E4FA
 P 5850 5250
@@ -888,4 +861,47 @@ F 3 "http://www.kingtronics.com/pdf/m7-diode.pdf" H 7050 4750 50  0001 C CNN
 	1    7050 4750
 	1    0    0    1   
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J?
+U 1 1 5C18E7C6
+P 9850 2800
+F 0 "J?" H 9900 3117 50  0000 C CNN
+F 1 "Power Out" H 9900 3026 50  0000 C CNN
+F 2 "" H 9850 2800 50  0001 C CNN
+F 3 "~" H 9850 2800 50  0001 C CNN
+	1    9850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2700 9550 2700
+Wire Wire Line
+	9650 2800 9550 2800
+Wire Wire Line
+	9650 2900 9550 2900
+Wire Wire Line
+	9650 3000 9550 3000
+Wire Wire Line
+	10150 2700 10250 2700
+Wire Wire Line
+	10150 2800 10250 2800
+Wire Wire Line
+	10150 2900 10250 2900
+Wire Wire Line
+	10150 3000 10250 3000
+Text GLabel 9550 2700 0    50   Input ~ 0
++12VA
+Text GLabel 10250 2700 2    50   Input ~ 0
+-12VA
+Text GLabel 9550 2800 0    50   Input ~ 0
++5VA
+Text GLabel 10250 2800 2    50   Input ~ 0
+-5VA
+Text GLabel 9550 2900 0    50   Input ~ 0
+AGND
+Text GLabel 10250 2900 2    50   Input ~ 0
+AGND
+Text GLabel 10250 3000 2    50   Input ~ 0
+DGND
+Text GLabel 9550 3000 0    50   Input ~ 0
++5VD
 $EndSCHEMATC
