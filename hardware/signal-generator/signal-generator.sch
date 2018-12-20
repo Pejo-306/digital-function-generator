@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Digital Function Generator"
 Date ""
 Rev "1"
@@ -809,4 +809,17 @@ Wire Wire Line
 	2100 1600 2300 1600
 Connection ~ 2100 1800
 NoConn ~ 2200 2200
+Text Notes 2950 650  0    50   ~ 0
+TODO: fix this LED
+Text Notes 1150 1400 0    50   ~ 0
+TODO: change these bypass caps
+$Sheet
+S 6300 3550 1350 1150
+U 5C1B9FC2
+F0 "SheetOutputCircuitry" 50
+F1 "output-circuitry.sch" 50
+F2 "IINA" I L 6300 4100 50 
+F3 "IINB" I L 6300 4300 50 
+F4 "VOUT" I R 7650 4200 50 
+$EndSheet
 $EndSCHEMATC
