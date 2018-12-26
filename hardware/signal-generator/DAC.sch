@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Video:AD9708AR U?
-U 1 1 5C176CA2
-P 5500 3600
-F 0 "U?" H 5500 4678 50  0000 C CNN
-F 1 "AD9708AR" H 5500 4587 50  0000 C CNN
-F 2 "" H 5500 3600 50  0001 C CNN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD9708.pdf" H 5500 3600 50  0001 C CNN
-	1    5500 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDA #PWR?
 U 1 1 5C176D61
 P 5600 4600
@@ -79,17 +68,6 @@ Wire Wire Line
 	6200 3900 6300 3900
 Wire Wire Line
 	4800 4200 4700 4200
-$Comp
-L Device:CP C?
-U 1 1 5C177648
-P 6300 4450
-F 0 "C?" H 6550 4450 50  0000 R CNN
-F 1 "0.1uF" H 6600 4350 50  0000 R CNN
-F 2 "" H 6338 4300 50  0001 C CNN
-F 3 "~" H 6300 4450 50  0001 C CNN
-	1    6300 4450
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 4300 6300 4200
 Wire Wire Line
@@ -106,17 +84,6 @@ F 2 "" H 6300 4700 50  0001 C CNN
 F 3 "" H 6300 4700 50  0001 C CNN
 	1    6300 4700
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C?
-U 1 1 5C177D75
-P 6550 4100
-F 0 "C?" V 6400 4200 50  0000 R CNN
-F 1 "0.1uF" V 6300 4200 50  0000 R CNN
-F 2 "" H 6588 3950 50  0001 C CNN
-F 3 "~" H 6550 4100 50  0001 C CNN
-	1    6550 4100
-	0    1    -1   0   
 $EndComp
 $Comp
 L power:+5VA #PWR?
@@ -152,17 +119,6 @@ F 2 "" H 6800 4100 50  0001 C CNN
 F 3 "" H 6800 4100 50  0001 C CNN
 	1    6800 4100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C?
-U 1 1 5C178930
-P 6450 3000
-F 0 "C?" V 6600 3050 50  0000 R CNN
-F 1 "0.1uF" V 6300 3100 50  0000 R CNN
-F 2 "" H 6488 2850 50  0001 C CNN
-F 3 "~" H 6450 3000 50  0001 C CNN
-	1    6450 3000
-	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	6300 3000 6200 3000
@@ -246,4 +202,48 @@ Wire Wire Line
 	6800 3500 6800 3400
 Wire Wire Line
 	6800 3400 6700 3400
+$Comp
+L Device:C C?
+U 1 1 5C23CBA5
+P 6300 4450
+F 0 "C?" H 6186 4404 50  0000 R CNN
+F 1 "100nF" H 6186 4495 50  0000 R CNN
+F 2 "" H 6338 4300 50  0001 C CNN
+F 3 "~" H 6300 4450 50  0001 C CNN
+	1    6300 4450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C23D059
+P 6450 3000
+F 0 "C?" V 6600 3000 50  0000 C CNN
+F 1 "100nF" V 6700 3000 50  0000 C CNN
+F 2 "" H 6488 2850 50  0001 C CNN
+F 3 "~" H 6450 3000 50  0001 C CNN
+	1    6450 3000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Video:AD9708AR U?
+U 1 1 5C176CA2
+P 5500 3600
+F 0 "U?" H 5500 4678 50  0000 C CNN
+F 1 "AD9708AR" H 5500 4587 50  0000 C CNN
+F 2 "" H 5500 3600 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD9708.pdf" H 5500 3600 50  0001 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C23EDF5
+P 6550 4100
+F 0 "C?" V 6700 4100 50  0000 C CNN
+F 1 "100nF" V 6800 4100 50  0000 C CNN
+F 2 "" H 6588 3950 50  0001 C CNN
+F 3 "~" H 6550 4100 50  0001 C CNN
+	1    6550 4100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

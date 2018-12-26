@@ -285,17 +285,6 @@ Wire Wire Line
 	6350 7200 6450 7200
 Text Label 6450 7200 0    50   ~ 0
 ~RESET
-$Comp
-L Device:LED D?
-U 1 1 5C0E8B9A
-P 3700 1050
-F 0 "D?" V 3645 1128 50  0000 L CNN
-F 1 "LED" V 3736 1128 50  0000 L CNN
-F 2 "" H 3700 1050 50  0001 C CNN
-F 3 "~" H 3700 1050 50  0001 C CNN
-	1    3700 1050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3700 1200 3700 1250
 Wire Wire Line
@@ -809,10 +798,6 @@ Wire Wire Line
 	2100 1600 2300 1600
 Connection ~ 2100 1800
 NoConn ~ 2200 2200
-Text Notes 2950 650  0    50   ~ 0
-TODO: fix this LED
-Text Notes 1150 1400 0    50   ~ 0
-TODO: change these bypass caps
 $Sheet
 S 6300 3550 1350 1150
 U 5C1B9FC2
@@ -822,4 +807,45 @@ F2 "IINA" I L 6300 4100 50
 F3 "IINB" I L 6300 4300 50 
 F4 "VOUT" I R 7650 4200 50 
 $EndSheet
+$Comp
+L Device:D D?
+U 1 1 5C23C312
+P 3700 1050
+F 0 "D?" V 3700 900 50  0000 L CNN
+F 1 "CD1206-S01575" H 3400 1150 50  0000 L CNN
+F 2 "" H 3700 1050 50  0001 C CNN
+F 3 "~" H 3700 1050 50  0001 C CNN
+	1    3700 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4100 6300 4100
+Wire Wire Line
+	6300 4300 5600 4300
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5C244DCA
+P 8050 4200
+F 0 "J?" H 8149 4176 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8149 4085 50  0000 L CNN
+F 2 "" H 8050 4200 50  0001 C CNN
+F 3 " ~" H 8050 4200 50  0001 C CNN
+	1    8050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4200 7650 4200
+Wire Wire Line
+	8050 4400 8050 4500
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C24A030
+P 8050 4500
+F 0 "#PWR?" H 8050 4250 50  0001 C CNN
+F 1 "GNDA" H 8055 4327 50  0000 C CNN
+F 2 "" H 8050 4500 50  0001 C CNN
+F 3 "" H 8050 4500 50  0001 C CNN
+	1    8050 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
