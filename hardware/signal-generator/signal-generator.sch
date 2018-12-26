@@ -885,13 +885,9 @@ F 3 "" H 4200 1350 50  0001 C CNN
 	1    4200 1350
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3400 3100 3500 3100
-Wire Wire Line
-	3400 3200 3500 3200
-Text Label 3500 3200 0    50   ~ 0
+Text Label 3500 2300 0    50   ~ 0
 LCD_SCL
-Text Label 3500 3100 0    50   ~ 0
+Text Label 3500 2200 0    50   ~ 0
 LCD_SDA
 Wire Wire Line
 	4300 1450 4200 1450
@@ -901,4 +897,162 @@ Text Label 4200 1450 2    50   ~ 0
 LCD_SDA
 Text Label 4200 1550 2    50   ~ 0
 LCD_SCL
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C282FE3
+P 5050 2200
+F 0 "SW?" V 5050 2000 50  0000 L CNN
+F 1 "START/STOP" H 4850 2400 50  0000 L CNN
+F 2 "" H 5050 2400 50  0001 C CNN
+F 3 "" H 5050 2400 50  0001 C CNN
+	1    5050 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C2831F9
+P 5650 2200
+F 0 "SW?" V 5650 2000 50  0000 L CNN
+F 1 "UP_ARROW" H 5450 2400 50  0000 L CNN
+F 2 "" H 5650 2400 50  0001 C CNN
+F 3 "" H 5650 2400 50  0001 C CNN
+	1    5650 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C2832CA
+P 5650 2700
+F 0 "SW?" V 5650 2500 50  0000 L CNN
+F 1 "DOWN_ARROW" H 5450 2900 50  0000 L CNN
+F 2 "" H 5650 2900 50  0001 C CNN
+F 3 "" H 5650 2900 50  0001 C CNN
+	1    5650 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C283358
+P 5050 2700
+F 0 "SW?" V 5050 2500 50  0000 L CNN
+F 1 "MODE_SELECT" H 4850 2900 50  0000 L CNN
+F 2 "" H 5050 2900 50  0001 C CNN
+F 3 "" H 5050 2900 50  0001 C CNN
+	1    5050 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2200 3500 2200
+Wire Wire Line
+	3400 2300 3500 2300
+Wire Wire Line
+	5650 2900 5050 2900
+Wire Wire Line
+	5050 2500 4850 2500
+Wire Wire Line
+	5050 2000 4850 2000
+Wire Wire Line
+	4850 2000 4850 2500
+Wire Wire Line
+	4850 2500 4850 3100
+Connection ~ 4850 2500
+Connection ~ 5050 2900
+Wire Wire Line
+	5650 2400 5950 2400
+Connection ~ 5650 2400
+$Comp
+L Device:R R?
+U 1 1 5C2B21D3
+P 6100 2400
+F 0 "R?" V 5893 2400 50  0000 C CNN
+F 1 "10k" V 5984 2400 50  0000 C CNN
+F 2 "" V 6030 2400 50  0001 C CNN
+F 3 "~" H 6100 2400 50  0001 C CNN
+	1    6100 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C2B228C
+P 6100 2900
+F 0 "R?" V 5893 2900 50  0000 C CNN
+F 1 "10k" V 5984 2900 50  0000 C CNN
+F 2 "" V 6030 2900 50  0001 C CNN
+F 3 "~" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2900 5650 2900
+Connection ~ 5650 2900
+Wire Wire Line
+	6250 2400 6350 2400
+Wire Wire Line
+	6350 2400 6350 2500
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C2BCB7C
+P 6350 2500
+F 0 "#PWR?" H 6350 2250 50  0001 C CNN
+F 1 "GNDD" H 6354 2345 50  0000 C CNN
+F 2 "" H 6350 2500 50  0001 C CNN
+F 3 "" H 6350 2500 50  0001 C CNN
+	1    6350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C2BCBBE
+P 6350 3000
+F 0 "#PWR?" H 6350 2750 50  0001 C CNN
+F 1 "GNDD" H 6354 2845 50  0000 C CNN
+F 2 "" H 6350 3000 50  0001 C CNN
+F 3 "" H 6350 3000 50  0001 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3000 6350 2900
+Wire Wire Line
+	6350 2900 6250 2900
+Wire Wire Line
+	5650 2000 5450 2000
+Wire Wire Line
+	5450 2000 5450 2500
+Wire Wire Line
+	5650 2500 5450 2500
+Connection ~ 5450 2500
+Wire Wire Line
+	5450 2500 5450 3100
+Wire Wire Line
+	4650 2900 5050 2900
+Text Label 4650 2400 2    50   ~ 0
+BTN_ROW0
+Text Label 4650 2900 2    50   ~ 0
+BTN_ROW1
+Text Label 4850 3100 2    50   ~ 0
+BTN_COL0
+Text Label 5450 3100 2    50   ~ 0
+BTN_COL1
+Wire Wire Line
+	3400 3100 3500 3100
+Wire Wire Line
+	3400 3200 3500 3200
+Wire Wire Line
+	3400 3300 3500 3300
+Wire Wire Line
+	3400 3400 3500 3400
+Text Label 3500 3100 0    50   ~ 0
+BTN_ROW0
+Text Label 3500 3200 0    50   ~ 0
+BTN_ROW1
+Text Label 3500 3300 0    50   ~ 0
+BTN_COL0
+Text Label 3500 3400 0    50   ~ 0
+BTN_COL1
+Connection ~ 5050 2400
+Wire Wire Line
+	4650 2400 5050 2400
+Wire Wire Line
+	5050 2400 5650 2400
 $EndSCHEMATC
