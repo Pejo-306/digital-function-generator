@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name TSH80)(type Legacy)(uri "/data/KiCad Custom Libraries/TSH80/TSH80.lib")(options "")(descr ""))
+  (lib (name LCD-I2C)(type Legacy)(uri "/data/KiCad Custom Libraries/LCD I2C/LCD-I2C.lib")(options "")(descr ""))
 )
