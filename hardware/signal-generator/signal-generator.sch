@@ -1053,4 +1053,48 @@ Wire Wire Line
 	3400 2600 3500 2600
 Wire Wire Line
 	3400 2700 3500 2700
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5C37CF50
+P 4500 5300
+F 0 "SW?" H 4500 5700 50  0000 C CNN
+F 1 "Frequency_Step_Rotary_Encoder" H 4500 5600 50  0000 C CNN
+F 2 "" H 4350 5460 50  0001 C CNN
+F 3 "~" H 4500 5560 50  0001 C CNN
+	1    4500 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4800 5200
+NoConn ~ 4800 5400
+Wire Wire Line
+	3400 3300 3500 3300
+Text Label 3500 3400 0    50   ~ 0
+FREQ_STEP_A
+Text Label 3500 3300 0    50   ~ 0
+FREQ_STEP_B
+Wire Wire Line
+	3500 3400 3400 3400
+$Comp
+L power:GNDD #PWR?
+U 1 1 5C392A0A
+P 4000 5500
+F 0 "#PWR?" H 4000 5250 50  0001 C CNN
+F 1 "GNDD" H 4004 5345 50  0000 C CNN
+F 2 "" H 4000 5500 50  0001 C CNN
+F 3 "" H 4000 5500 50  0001 C CNN
+	1    4000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5400 4100 5400
+Text Label 4100 5400 2    50   ~ 0
+FREQ_STEP_B
+Wire Wire Line
+	4200 5200 4100 5200
+Text Label 4100 5200 2    50   ~ 0
+FREQ_STEP_A
+Wire Wire Line
+	4000 5500 4000 5300
+Wire Wire Line
+	4000 5300 4200 5300
 $EndSCHEMATC
