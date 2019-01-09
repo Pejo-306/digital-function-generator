@@ -257,16 +257,10 @@ Wire Wire Line
 	10000 1150 10000 1100
 Wire Wire Line
 	10000 2050 10000 2100
-Wire Wire Line
-	3400 2700 3500 2700
 Text Label 3500 2700 0    50   ~ 0
 SCLK
-Wire Wire Line
-	3400 2600 3500 2600
 Text Label 3500 2600 0    50   ~ 0
 MISO
-Wire Wire Line
-	3400 2500 3500 2500
 Text Label 3500 2500 0    50   ~ 0
 MOSI
 Wire Wire Line
@@ -885,9 +879,9 @@ F 3 "" H 4200 1350 50  0001 C CNN
 	1    4200 1350
 	0    -1   -1   0   
 $EndComp
-Text Label 3500 2300 0    50   ~ 0
+Text Label 3500 3200 0    50   ~ 0
 LCD_SCL
-Text Label 3500 2200 0    50   ~ 0
+Text Label 3500 3100 0    50   ~ 0
 LCD_SDA
 Wire Wire Line
 	4300 1450 4200 1450
@@ -941,10 +935,6 @@ F 3 "" H 5050 2900 50  0001 C CNN
 	1    5050 2700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3400 2200 3500 2200
-Wire Wire Line
-	3400 2300 3500 2300
 Wire Wire Line
 	5650 2900 5050 2900
 Wire Wire Line
@@ -1034,25 +1024,33 @@ Text Label 4850 3100 2    50   ~ 0
 BTN_COL0
 Text Label 5450 3100 2    50   ~ 0
 BTN_COL1
-Wire Wire Line
-	3400 3100 3500 3100
-Wire Wire Line
-	3400 3200 3500 3200
-Wire Wire Line
-	3400 3300 3500 3300
-Wire Wire Line
-	3400 3400 3500 3400
-Text Label 3500 3100 0    50   ~ 0
-BTN_ROW0
-Text Label 3500 3200 0    50   ~ 0
-BTN_ROW1
-Text Label 3500 3300 0    50   ~ 0
-BTN_COL0
-Text Label 3500 3400 0    50   ~ 0
-BTN_COL1
 Connection ~ 5050 2400
 Wire Wire Line
 	4650 2400 5050 2400
 Wire Wire Line
 	5050 2400 5650 2400
+Wire Wire Line
+	3400 2500 3800 2500
+Wire Wire Line
+	3400 2400 3800 2400
+Text Label 3800 2200 0    50   ~ 0
+BTN_ROW0
+Text Label 3800 2300 0    50   ~ 0
+BTN_ROW1
+Text Label 3800 2400 0    50   ~ 0
+BTN_COL0
+Text Label 3800 2500 0    50   ~ 0
+BTN_COL1
+Wire Wire Line
+	3400 2200 3800 2200
+Wire Wire Line
+	3400 3100 3500 3100
+Wire Wire Line
+	3400 2300 3800 2300
+Wire Wire Line
+	3400 3200 3500 3200
+Wire Wire Line
+	3400 2600 3500 2600
+Wire Wire Line
+	3400 2700 3500 2700
 $EndSCHEMATC
