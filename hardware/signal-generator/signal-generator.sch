@@ -304,8 +304,8 @@ F6 "DB4" I L 5800 4750 50
 F7 "DB5" I L 5800 4850 50 
 F8 "DB6" I L 5800 4950 50 
 F9 "DB7" I L 5800 5050 50 
-F10 "CLK" I L 5800 4200 50 
-F11 "SLEEP" I L 5800 4100 50 
+F10 "CLK" I L 5800 4100 50 
+F11 "SLEEP" I L 5800 4200 50 
 F12 "IOUTA" I R 7100 4550 50 
 F13 "IOUTB" I R 7100 4750 50 
 $EndSheet
@@ -875,18 +875,10 @@ F 3 "" H 3400 1100 50  0001 C CNN
 	1    3400 1100
 	0    -1   -1   0   
 $EndComp
-Text Label 4800 3650 0    50   ~ 0
-LCD_SCL
-Text Label 4800 3550 0    50   ~ 0
-LCD_SDA
 Wire Wire Line
 	3500 1200 3400 1200
 Wire Wire Line
 	3500 1300 3400 1300
-Text Label 3400 1200 2    50   ~ 0
-LCD_SDA
-Text Label 3400 1300 2    50   ~ 0
-LCD_SCL
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5C282FE3
@@ -1040,11 +1032,7 @@ BTN_COL1
 Wire Wire Line
 	4700 2650 5100 2650
 Wire Wire Line
-	4700 3550 4800 3550
-Wire Wire Line
 	4700 2750 5100 2750
-Wire Wire Line
-	4700 3650 4800 3650
 Wire Wire Line
 	4700 3050 4800 3050
 Wire Wire Line
@@ -1062,14 +1050,10 @@ F 3 "~" H 9150 3410 50  0001 C CNN
 $EndComp
 NoConn ~ 9450 3050
 NoConn ~ 9450 3250
-Wire Wire Line
-	4700 3750 4800 3750
-Text Label 4800 3850 0    50   ~ 0
+Text Label 4800 3650 0    50   ~ 0
 FREQ_STEP_A
-Text Label 4800 3750 0    50   ~ 0
+Text Label 4800 3550 0    50   ~ 0
 FREQ_STEP_B
-Wire Wire Line
-	4800 3850 4700 3850
 $Comp
 L power:GNDD #PWR?
 U 1 1 5C392A0A
@@ -1116,17 +1100,9 @@ NoConn ~ 3500 4450
 NoConn ~ 3500 4550
 NoConn ~ 3500 4650
 Wire Wire Line
-	4700 4050 5400 4050
-Wire Wire Line
-	5400 4050 5400 4200
-Wire Wire Line
 	5400 4200 5800 4200
 Wire Wire Line
 	5800 4100 5500 4100
-Wire Wire Line
-	5500 4100 5500 3950
-Wire Wire Line
-	5500 3950 4700 3950
 Wire Notes Line
 	3400 6100 700  6100
 Wire Notes Line
@@ -1218,4 +1194,28 @@ Wire Notes Line
 	2550 4050 2550 5400
 Wire Notes Line
 	1250 4050 1250 5400
+Wire Wire Line
+	4700 3950 4800 3950
+Wire Wire Line
+	4700 4050 4800 4050
+Text Label 4800 3950 0    50   ~ 0
+SDA
+Text Label 4800 4050 0    50   ~ 0
+SCL
+Text Label 3400 1200 2    50   ~ 0
+SDA
+Text Label 3400 1300 2    50   ~ 0
+SCL
+Wire Wire Line
+	4700 3550 4800 3550
+Wire Wire Line
+	4700 3650 4800 3650
+Wire Wire Line
+	5400 4200 5400 3850
+Wire Wire Line
+	4700 3850 5400 3850
+Wire Wire Line
+	5500 4100 5500 3750
+Wire Wire Line
+	4700 3750 5500 3750
 $EndSCHEMATC
