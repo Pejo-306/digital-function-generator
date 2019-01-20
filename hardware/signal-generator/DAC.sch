@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "Digital Function Generator - DAC IC"
-Date "2019-01-14"
+Date "2019-01-20"
 Rev "1"
 Comp "Petar Nikolov"
 Comment1 ""
@@ -246,4 +246,34 @@ F 3 "~" H 6550 4100 50  0001 C CNN
 	1    6550 4100
 	0    1    1    0   
 $EndComp
+$Comp
+L power:GNDA #PWR0101
+U 1 1 5C4FE073
+P 5600 5250
+F 0 "#PWR0101" H 5600 5000 50  0001 C CNN
+F 1 "GNDA" H 5605 5077 50  0000 C CNN
+F 2 "" H 5600 5250 50  0001 C CNN
+F 3 "" H 5600 5250 50  0001 C CNN
+	1    5600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0102
+U 1 1 5C4FE0F8
+P 5400 5250
+F 0 "#PWR0102" H 5400 5000 50  0001 C CNN
+F 1 "GNDD" H 5404 5095 50  0000 C CNN
+F 2 "" H 5400 5250 50  0001 C CNN
+F 3 "" H 5400 5250 50  0001 C CNN
+	1    5400 5250
+	1    0    0    -1  
+$EndComp
+Text Notes 5300 5200 0    50   ~ 0
+STAR GND
+Wire Wire Line
+	5600 5250 5600 5200
+Wire Wire Line
+	5600 5200 5400 5200
+Wire Wire Line
+	5400 5200 5400 5250
 $EndSCHEMATC
