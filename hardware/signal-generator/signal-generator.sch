@@ -325,17 +325,6 @@ Wire Wire Line
 	4700 4950 5800 4950
 Wire Wire Line
 	4700 5050 5800 5050
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J3
-U 1 1 5C1885E3
-P 6000 6750
-F 0 "J3" H 6050 7067 50  0000 C CNN
-F 1 "Power_Supply_Rails" H 6050 6976 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 6000 6750 50  0001 C CNN
-F 3 "~" H 6000 6750 50  0001 C CNN
-	1    6000 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5800 6650 5700 6650
 Wire Wire Line
@@ -348,7 +337,7 @@ Text GLabel 5700 6650 0    50   Input ~ 0
 +12VA
 Text GLabel 5700 6750 0    50   Input ~ 0
 +5VA
-Text GLabel 5700 6950 0    50   Input ~ 0
+Text GLabel 5700 7050 0    50   Input ~ 0
 +5VD
 Text GLabel 5700 6850 0    50   Input ~ 0
 AGND
@@ -356,7 +345,7 @@ Text GLabel 6400 6850 2    50   Input ~ 0
 AGND
 Wire Wire Line
 	6400 6850 6300 6850
-Text GLabel 6400 6950 2    50   Input ~ 0
+Text GLabel 6400 7050 2    50   Input ~ 0
 DGND
 Wire Wire Line
 	6300 6950 6400 6950
@@ -1021,13 +1010,13 @@ Wire Wire Line
 	4700 2950 5100 2950
 Wire Wire Line
 	4700 2850 5100 2850
-Text Label 5100 2650 0    50   ~ 0
-BTN_ROW0
 Text Label 5100 2750 0    50   ~ 0
+BTN_ROW0
+Text Label 5100 2650 0    50   ~ 0
 BTN_ROW1
-Text Label 5100 2850 0    50   ~ 0
-BTN_COL0
 Text Label 5100 2950 0    50   ~ 0
+BTN_COL0
+Text Label 5100 2850 0    50   ~ 0
 BTN_COL1
 Wire Wire Line
 	4700 2650 5100 2650
@@ -1288,4 +1277,23 @@ Wire Wire Line
 	3500 4450 3400 4450
 Wire Wire Line
 	3400 4350 3500 4350
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J3
+U 1 1 5C4B5674
+P 6000 6850
+F 0 "J3" H 6050 7267 50  0000 C CNN
+F 1 "Power_Supply_Rails" H 6050 7176 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 6000 6850 50  0001 C CNN
+F 3 "~" H 6000 6850 50  0001 C CNN
+	1    6000 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 7050 6400 7050
+Wire Wire Line
+	5800 7050 5700 7050
+Text GLabel 6400 6950 2    50   Input ~ 0
+DGND
+Text GLabel 5700 6950 0    50   Input ~ 0
+DGND
 $EndSCHEMATC
