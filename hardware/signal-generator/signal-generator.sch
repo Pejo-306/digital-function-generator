@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Digital Function Generator"
-Date "2019-01-14"
+Date "2019-01-27"
 Rev "1"
 Comp "Petar Nikolov"
 Comment1 ""
@@ -332,12 +332,12 @@ Wire Wire Line
 Wire Wire Line
 	5800 6850 5700 6850
 Wire Wire Line
-	5800 6950 5700 6950
+	5800 7050 5700 7050
 Text GLabel 5700 6650 0    50   Input ~ 0
 +12VA
 Text GLabel 5700 6750 0    50   Input ~ 0
 +5VA
-Text GLabel 5700 7050 0    50   Input ~ 0
+Text GLabel 5700 7150 0    50   Input ~ 0
 +5VD
 Text GLabel 5700 6850 0    50   Input ~ 0
 AGND
@@ -345,10 +345,10 @@ Text GLabel 6400 6850 2    50   Input ~ 0
 AGND
 Wire Wire Line
 	6400 6850 6300 6850
-Text GLabel 6400 7050 2    50   Input ~ 0
+Text GLabel 6400 7150 2    50   Input ~ 0
 DGND
 Wire Wire Line
-	6300 6950 6400 6950
+	6300 7050 6400 7050
 Text GLabel 6400 6650 2    50   Input ~ 0
 -12VA
 Wire Wire Line
@@ -1277,23 +1277,25 @@ Wire Wire Line
 	3500 4450 3400 4450
 Wire Wire Line
 	3400 4350 3500 4350
+Wire Wire Line
+	6300 7150 6400 7150
+Wire Wire Line
+	5800 7150 5700 7150
+Text GLabel 6400 7050 2    50   Input ~ 0
+DGND
+Text GLabel 5700 7050 0    50   Input ~ 0
+DGND
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J3
-U 1 1 5C4B5674
+L Connector_Generic:Conn_02x06_Odd_Even J3
+U 1 1 5C4E64BC
 P 6000 6850
 F 0 "J3" H 6050 7267 50  0000 C CNN
 F 1 "Power_Supply_Rails" H 6050 7176 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 6000 6850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 6000 6850 50  0001 C CNN
 F 3 "~" H 6000 6850 50  0001 C CNN
 	1    6000 6850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6300 7050 6400 7050
-Wire Wire Line
-	5800 7050 5700 7050
-Text GLabel 6400 6950 2    50   Input ~ 0
-DGND
-Text GLabel 5700 6950 0    50   Input ~ 0
-DGND
+NoConn ~ 6300 6950
+NoConn ~ 5800 6950
 $EndSCHEMATC
