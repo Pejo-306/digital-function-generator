@@ -26,5 +26,13 @@ _autosave-*
 *.csv
 
 # Gerber files
-gerber/
+*.gbr
+*.drl
+
+# Private folder 
+# (used for information which is not directly related to the project)
+_private/
+
+# Archives
+*.zip
 
