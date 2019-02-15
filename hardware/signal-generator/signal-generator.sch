@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 3
 Title "Digital Function Generator"
 Date "2019-02-14"
-Rev "1"
+Rev "2"
 Comp "Petar Nikolov"
 Comment1 ""
 Comment2 ""
