@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Power Supply for Digital Function Generator"
 Date "2019-04-28"
 Rev "1"
@@ -722,30 +722,6 @@ Text GLabel 5800 7200 0    50   Input ~ 0
 +5VD
 Wire Wire Line
 	0    7550 1500 7550
-$Comp
-L power:GNDD #PWR?
-U 1 1 5CD15F6C
-P 2800 1850
-F 0 "#PWR?" H 2800 1600 50  0001 C CNN
-F 1 "GNDD" H 2804 1695 50  0000 C CNN
-F 2 "" H 2800 1850 50  0001 C CNN
-F 3 "" H 2800 1850 50  0001 C CNN
-	1    2800 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5CD15FD4
-P 2800 1650
-F 0 "#FLG?" H 2800 1725 50  0001 C CNN
-F 1 "PWR_FLAG" H 2800 1824 50  0000 C CNN
-F 2 "" H 2800 1650 50  0001 C CNN
-F 3 "~" H 2800 1650 50  0001 C CNN
-	1    2800 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 1650 2800 1850
 $Sheet
 S 6350 2000 1100 1000
 U 5CDACA72
@@ -758,5 +734,15 @@ F5 "-12VA" I R 7450 2900 50
 F6 "+5VA" I R 7450 2300 50 
 F7 "-5VA" I R 7450 2700 50 
 F8 "AGND" I R 7450 2500 50 
+$EndSheet
+$Sheet
+S 6350 3300 1100 600 
+U 5CE7C647
+F0 "Digital_Power_Supply" 50
+F1 "digital-power-supply.sch" 50
+F2 "MAINS1" I L 6350 3500 50 
+F3 "MAINS2" I L 6350 3700 50 
+F4 "+5VD" I R 7450 3500 50 
+F5 "DGND" I R 7450 3700 50 
 $EndSheet
 $EndSCHEMATC

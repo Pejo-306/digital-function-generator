@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "Analog Power Supply for Digital Signal Generator"
 Date "2019-04-28"
 Rev "1"
@@ -150,38 +150,8 @@ Wire Wire Line
 	4050 4050 4050 3550
 Wire Wire Line
 	4050 3550 4150 3550
-$Comp
-L power:+15V #PWR?
-U 1 1 5CDC5B60
-P 5150 2950
-AR Path="/5CDC5B60" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CDC5B60" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5150 2800 50  0001 C CNN
-F 1 "+15V" H 5165 3123 50  0000 C CNN
-F 2 "" H 5150 2950 50  0001 C CNN
-F 3 "" H 5150 2950 50  0001 C CNN
-	1    5150 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 2950 5150 3050
 Connection ~ 5150 3050
-Wire Wire Line
-	5150 4050 5150 4150
 Connection ~ 5150 4050
-$Comp
-L power:-15V #PWR?
-U 1 1 5CDC5B6A
-P 5150 4150
-AR Path="/5CDC5B6A" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CDC5B6A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5150 4250 50  0001 C CNN
-F 1 "-15V" H 5165 4323 50  0000 C CNN
-F 2 "" H 5150 4150 50  0001 C CNN
-F 3 "" H 5150 4150 50  0001 C CNN
-	1    5150 4150
-	-1   0    0    1   
-$EndComp
 Connection ~ 3800 3550
 Wire Wire Line
 	3800 3550 3800 3500
@@ -378,38 +348,6 @@ Text HLabel 3050 3300 0    50   Input ~ 0
 MAINS1
 Text HLabel 3050 3700 0    50   Input ~ 0
 MAINS2
-$Comp
-L power:+15V #PWR?
-U 1 1 5CDCB576
-P 6350 1650
-AR Path="/5CDCB576" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CDCB576" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6350 1500 50  0001 C CNN
-F 1 "+15V" H 6365 1823 50  0000 C CNN
-F 2 "" H 6350 1650 50  0001 C CNN
-F 3 "" H 6350 1650 50  0001 C CNN
-	1    6350 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 1650 6350 1750
-Connection ~ 6350 1750
-$Comp
-L power:-15V #PWR?
-U 1 1 5CDCC452
-P 6350 2850
-AR Path="/5CDCC452" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CDCC452" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6350 2950 50  0001 C CNN
-F 1 "-15V" H 6365 3023 50  0000 C CNN
-F 2 "" H 6350 2850 50  0001 C CNN
-F 3 "" H 6350 2850 50  0001 C CNN
-	1    6350 2850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6350 2850 6350 2750
-Connection ~ 6350 2750
 Wire Wire Line
 	5150 3450 5150 3550
 Connection ~ 5150 3550
@@ -685,38 +623,6 @@ Wire Wire Line
 	6350 5350 6750 5350
 Connection ~ 6750 5350
 $Comp
-L power:-15V #PWR?
-U 1 1 5CE007C7
-P 6350 5450
-AR Path="/5CE007C7" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CE007C7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6350 5550 50  0001 C CNN
-F 1 "-15V" H 6365 5623 50  0000 C CNN
-F 2 "" H 6350 5450 50  0001 C CNN
-F 3 "" H 6350 5450 50  0001 C CNN
-	1    6350 5450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6350 5450 6350 5350
-Connection ~ 6350 5350
-$Comp
-L power:+15V #PWR?
-U 1 1 5CE03261
-P 6350 4250
-AR Path="/5CE03261" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CE03261" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6350 4100 50  0001 C CNN
-F 1 "+15V" H 6365 4423 50  0000 C CNN
-F 2 "" H 6350 4250 50  0001 C CNN
-F 3 "" H 6350 4250 50  0001 C CNN
-	1    6350 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4250 6350 4350
-Connection ~ 6350 4350
-$Comp
 L power:GNDA #PWR?
 U 1 1 5CE05D94
 P 6050 4950
@@ -843,32 +749,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 1850 4450 2050
 $Comp
-L power:-15V #PWR?
-U 1 1 5CE4B7EB
-P 4450 2050
-AR Path="/5CE4B7EB" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CE4B7EB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4450 2150 50  0001 C CNN
-F 1 "-15V" H 4465 2223 50  0000 C CNN
-F 2 "" H 4450 2050 50  0001 C CNN
-F 3 "" H 4450 2050 50  0001 C CNN
-	1    4450 2050
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+15V #PWR?
-U 1 1 5CE4B7F1
-P 4050 1850
-AR Path="/5CE4B7F1" Ref="#PWR?"  Part="1" 
-AR Path="/5CDACA72/5CE4B7F1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4050 1700 50  0001 C CNN
-F 1 "+15V" H 4065 2023 50  0000 C CNN
-F 2 "" H 4050 1850 50  0001 C CNN
-F 3 "" H 4050 1850 50  0001 C CNN
-	1    4050 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDA #PWR?
 U 1 1 5CE4B7F7
 P 4850 2050
@@ -905,4 +785,36 @@ Wire Notes Line
 	3850 1500 3850 2350
 Text Notes 3850 1500 0    50   ~ 0
 POWER FLAGS
+Wire Wire Line
+	5150 4050 5350 4050
+Text Label 5350 4050 0    50   ~ 0
+-15V
+Wire Wire Line
+	5150 3050 5350 3050
+Text Label 5350 3050 0    50   ~ 0
++15V
+Text Label 4050 1850 1    50   ~ 0
++15V
+Text Label 4450 2050 3    50   ~ 0
+-15V
+Text Label 6150 1750 2    50   ~ 0
++15V
+Wire Wire Line
+	6150 1750 6350 1750
+Connection ~ 6350 1750
+Text Label 6150 2750 2    50   ~ 0
+-15V
+Wire Wire Line
+	6150 2750 6350 2750
+Connection ~ 6350 2750
+Text Label 6150 5350 2    50   ~ 0
+-15V
+Wire Wire Line
+	6150 5350 6350 5350
+Connection ~ 6350 5350
+Text Label 6150 4350 2    50   ~ 0
++15V
+Wire Wire Line
+	6150 4350 6350 4350
+Connection ~ 6350 4350
 $EndSCHEMATC
