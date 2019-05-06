@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Power Supply for Digital Function Generator"
-Date "2019-04-28"
+Date "2019-05-06"
 Rev "1"
 Comp "Petar Nikolov"
 Comment1 ""
@@ -96,10 +96,6 @@ Text GLabel 6800 4300 0    50   Input ~ 0
 +5VD
 Text GLabel 6800 4500 0    50   Input ~ 0
 +5VD
-Text GLabel 6800 4400 0    50   Input ~ 0
-DGND
-Text GLabel 6800 4600 0    50   Input ~ 0
-DGND
 Text GLabel 7500 4300 2    50   Input ~ 0
 DGND
 Text GLabel 7500 4400 2    50   Input ~ 0
@@ -194,4 +190,8 @@ Text GLabel 3750 3900 0    50   Input ~ 0
 MAINS
 Text GLabel 3750 4100 0    50   Input ~ 0
 MAINS
+Text GLabel 6800 4400 0    50   Input ~ 0
++5VD
+Text GLabel 6800 4600 0    50   Input ~ 0
++5VD
 $EndSCHEMATC
