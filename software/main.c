@@ -4,7 +4,7 @@
 
 #define NSIN_VALUES 256
 #define INPUT_SETUP_TIME 2 // in ns
-#define SETTLING_TIME 35  // in ns
+#define INPUT_HOLD_TIME (15 / 10)  // 1.5 ns
 #define INSTRUCTION_CYCLE_TIME (1000000000 / F_CPU)  // in ns
 
 static const uint8_t sin_values[NSIN_VALUES] = { 
@@ -50,9 +50,9 @@ int main(void)
     const double input_setup_time_us = INPUT_SETUP_TIME / 1000.0;
     additional_delay_time += input_setup_time_us;
 #endif
-#if INSTRUCTION_CYCLE_TIME <= SETTLING_TIME
-    const double settling_time_us = SETTLING_TIME / 1000.0;
-    additional_delay_time += settling_time_us;
+#if INSTRUCTION_CYCLE_TIME <= INPUT_HOLD_TIME
+    const double input_hold_time_us = INPUT_HOLD_TIME / 1000.0;
+    additional_delay_time += input_hold_time_us;
 #endif
     double period = 1000000.0 / frequency;  // in us
     double value_step = period / NSIN_VALUES;  // in us
@@ -72,8 +72,8 @@ int main(void)
             _delay_us(input_setup_time_us);  // delay until input is setup
 #endif
             PORTC |= (1 << PORTC2);  // latch data to DAC
-#if INSTRUCTION_CYCLE_TIME <= SETTLING_TIME
-            _delay_us(settling_time_us);
+#if INSTRUCTION_CYCLE_TIME <= INPUT_HOLD_TIME
+            _delay_us(input_hold_time_us);
 #endif
             PORTC &= (0 << PORTC2);  // reset CLK state
             // delay until next step
